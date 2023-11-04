@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Personal Website </title>
+    <!--Meta tags represent various kinds of metadata that cannot be expressed using the title,
+    base, link, style, and script elements-->
+    <meta name="Description" content="Personal Testing Website">
+    <meta name="Keywords" content="HTML, Testing">
+    <meta name="Author" content="Skylar Thompson">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">    <!--use this the refresh the browser-->
+
+</head>
+
+<body>
+
+
+<h1>Skylar Thompson's Personal Website</h1>
+<hr> <!--Adds a Horizontal Line-->
+
+    <a href = "https://www.google.com/" target=_blank title="This takes you to Google"> 
+        <!--'target=_blank opens the hyperlink in a new tab and is not required'-->
+        <!--title= Makes a pop-up appear when hovering your mouse over the hyperlink-->
+        Google
+    </a>
+    
+    <br>
+    <br>
+
+    <a href="page2.html" target="_blank">
+        Page 2
+    </a>
+
+    <br>
+    <br>
+
+    <a href="mailto:skylar024@gmail.com">
+        <!--Send an Email-->
+        Test Email
+    </a>
+    
+    <br>
+    <br>
+
+    <img src="/images/frost.jpg" height="300" width="500" alt="Frost from Warframe">
+    <!--if only height or width is used the other parameter not used will be scaled proportionally-->
+    <!--'alt' is for alternate text for people that use a screen reader-->
+     
+    <br>
+    <br>
+    
+        <button onClick="doSomething()" style="background-color: red; border-radius: 10px">
+            Click Here
+        </button>
+        <p id="test">
+            Button Pressed
+        </p>
+        <!--the script tag could be done is JS, this makes the text from the
+        attribute with the id = 'test' change to Goodbye-->
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML = "Goodbye";
+            }
+        </script>
+    
+    <br>
+    <br>
+
+    <audio controls src="/audio/oh Boy (Amer).mp3">
+        <!--'controls' adds the audio play bar-->
+        <!--'autoplay' automatically plays the audio when the page is loaded-->
+        <!--'muted' starts the audio volume as muted-->
+        <!--'loop' loops the audio-->
+        <!--Some browsers do not support some audio files, use this code to make the mp3 file
+        the main source then another one as the backup or type out a backup message
+        if no audio files are supported
+
+        <source src="/oh boy (Amer).mp3">
+        <source src="/oh boy (Amer).wav">
+        This Browser does not support HTML5 audio
+
+        -->
+    </audio>
+
+    <br>
+    <br>
+
+    <video controls src="/videos/TimelapseTest.mp4" width="400">
+        <!--Has alot of the same attributes as audio-->
+
+    </video>
+
+    <br>
+    <br>
+
+    <p> This is normal text</p>
+    <p> This is <b>bold</b> text</p>
+    <p> This is <i>italic</i> text</p>
+    <p> This is <big>big</big> text</p>
+    <p> This is <small>small</small> text</p>
+    <p> This is <sub>subcript</sub> text</p>
+    <p> This is <sup>superscript</sup> text</p>
+    <p> This is <ins>inserted</ins> text</p>
+    <p> This is <del>deleted</del> text</p>
+    <p> This is <mark>marked</mark> text</p>
+
+    
+
+    <h4>Unordered List</h4>
+    <!--'ul' is unordered list, 'li' is each list element-->
+    <ul>
+        <li>
+            pizza dough
+        </li>
+        <li> 
+            tomato sauce
+        </li>
+        <li>
+            Toppings
+                <ul>
+                    <li>
+                        Chicken
+                    </li>
+                    <li>
+                        Olives
+                    </li>
+                </ul>
+        </li>
+    </ul>
+
+    <h4>Ordered List</h4>
+    <!--'ol' is ordered list, type= sets the type of list, "A" to replace the numbers with letters-->
+    <ol type = "A">
+        <li>
+            Clean Room
+        </li>
+        <li>
+            Do Homework
+        </li>
+    </ol>
+    <h4>Description List</h4>
+    <!--'dt' is description term, 'dd' is description definition-->
+    <dl>
+        <dt>
+            HTML
+        </dt>
+        <dd>
+            This adds structure to a webpage
+        </dd>
+        <dt>
+            CSS
+        </dt>
+        <dd>
+            This adds style to a webpage
+        </dd>
+        <dt>
+            JavaScript
+        </dt>
+        <dd>
+            This adds functionality to a webpage
+        </dd>
+    </dl>
+
+    
+
+    <h3>Tables</h3>
+    <!--'tr' is table row, 'th' is table header, 'td' is table data-->
+      
+        <table bgcolor="black" width="700">
+            <tr bgcolor="grey">
+                <th width="100">
+                    Sunday
+                </th>
+                <th width="100">
+                    Monday
+                </th>
+                <th width="100">
+                    Tuesday
+                </th>
+                <th width="100">
+                    Wednesday
+                </th>
+                <th width="100">
+                    Thursday
+                </th>
+                <th width="100">
+                    Friday
+                </th>
+                <th width="100">
+                    Saturday
+                </th>
+
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>
+                    Closed
+                </td>
+                <td>
+                    9-5
+                </td>
+                <td>
+                    9-5
+                </td>
+                <td>
+                    9-5
+                </td>
+                <td>
+                    9-5
+                </td>
+                <td>
+                    9-5
+                </td>
+                <td>
+                    Closed
+                </td>
+            </tr>
+
+        </table>
+
+    <h1 style="background-color:blue" >
+        Hello!
+    </h1>
+    <h1 style="color:rgb(11, 153, 148)">
+        Hello!
+    </h1>    
+    <h1 style="color: #28f005">
+        Hello!
+    </h1>
+    <p style="background-color: #222222; color: #28f005">
+        Hello!
+    </p>  
+    
+    <br>
+    
+    <!--span adds markup to text or portion of a document-->
+    <!--div defines a division of a document-->
+
+    <h1>
+        Welcome
+    </h1>
+    <div style="background-color: #444444">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, soluta nesciunt neque perspiciatis ea, expedita facilis quia voluptatibus praesentium placeat eveniet libero error natus? Obcaecati soluta quia nemo aspernatur quae?
+        </p>
+        <p>
+            <span style="color: red">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span> Ullam iusto, unde commodi iure optio recusandae sit blanditiis id hic ipsa eaque excepturi, dolorem repellat magni reprehenderit odit amet corrupti fuga.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed amet voluptatibus debitis harum repellat, sapiente soluta deleniti atque culpa alias eius doloremque, accusamus laudantium officiis nihil eveniet quia consequuntur accusantium!
+        </p>
+    </div>
+
+    
+    <br>
+    
+    <form action="action_page.php" method="POST">
+        <div>
+            <label for="fname">
+                First name:
+            </label>
+            <input type="text" id="fname" name="fname" placeholder="John" required>
+        </div>
+        <br>
+        <div>
+            <label for="lname">
+                Last name:
+            </label>
+            <input type="text" id="lname" name="lname" placeholder="Doe">
+        </div>
+        <br>
+        <div>
+            <label for="pass">
+                Password:
+            </label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">
+                Email:
+            </label>
+            <input type="email" id="email" name="email" placeholder="JohnDoe@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="phone">
+                Phone Number:
+            </label>
+            <input type="tel" id="phone" name="phone" placeholder="(012)-345-6789">
+        </div>
+        <br>
+        <div>
+            <label for="bdate">
+                Birthdate:
+            </label>
+            <input type="date" id="bdate" name="bdate">
+        </div>
+        <br>
+        <div>
+            <label for="quantity">
+                Quantity:
+            </label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+        <br>
+        <div>
+            <label for="title">
+                Title: 
+            </label>
+
+            <label for="Mr.">
+                Mr.
+            </label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="Mrs.">
+                Mrs.
+            </label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="PHD">
+                PHD
+            </label>
+            <input type="radio" id="PHD" name="title" value="PHD">
+
+        </div>
+        <br>
+        <div>
+            <label for="payment">
+                Payment: 
+            </label>
+            <select id="payment" name="payment">
+                <option value="visa">
+                    Visa
+                </option>
+                <option value="mastercard">
+                    MasterCard
+                </option>
+                <option value="giftcard">
+                    Giftcard
+                </option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="subscribe">
+                Subscribe: 
+            </label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <!--iframe embeds content from another source into an HTML document like for ads,
+    and for hacking-->
+    <!--Some major websites block the use of iframes because other sites could use iframes
+    to pose as other websites to steal information-->
+    <iframe src="https://www.bing.com" width="750" height="250">
+</body>
+
+</html>
+    
